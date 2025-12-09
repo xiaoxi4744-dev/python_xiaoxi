@@ -11,7 +11,7 @@ print("num1 - num2 =",num1 - num2)   # ลบ
 print("num1 * num2 =",num1 * num2)   # คูณ
 print("num1 / num2 =",num1 / num2)   # หาร
 print("num1 ** num2 =",num1 ** num2) # ยกกำลัง
-print("num1 // num2 =",num1 // num2) # หารไม่เอ
+print("num1 // num2 =",num1 // num2) # หารไม่เอาเศษ
 print("num1 % num2 =",num1 % num2)   # หารเอาเศษ
 
 # ตัวอย่างการใช้ตัวดำเนินการเปรียบเทียบ
