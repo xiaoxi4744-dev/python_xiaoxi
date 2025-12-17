@@ -1,14 +1,14 @@
-#ระบบเก็บคะแนนนักเรียน
-Studen = {
-    "zhifan":"100",
-    "lingling":"100",
-    "xiao":"100"
-}
+custom_data = [ #list of dictionaries
+    {"name":"xiao", "type":"member"},
+    {"name":"li", "type":"guest"},
+    {"name":"wang", "type":"member"},   
+]
 
+id = int(input("ป้อนรหัสลูกค้า : "))
+print(f"รหัสลูกค้าที่ป้อนคือ {id} : {custom_data[id]['name']}")
 
-name = input("ใส่ชื่อ : ")
-score = input("ใส่คะแนน : ")
-Studen.update({name:score}) 
-
-for key,value in Studen.items():
-    print(key," = ",value)
+match custom_data[id]:
+    case {"type" : "member"}:
+        print("คุณคือสมาชิกได้รับสิทธิพิเศษ")
+    case _:
+        print("ไม่ได้เป็นสมาชิก")
