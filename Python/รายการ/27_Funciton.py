@@ -27,3 +27,36 @@ Add(5)    # เรียกใช้ฟังก์ชัน Add
 save(name="Xiao",department="IT",salary=70000,address="Bangkok")
 save(name="Zhifan",department="กราฟฟิก",salary=30000,address="Home")
 save(name="Ling",department="sotf",salary=60000,address="Chiangmai")
+
+#function return
+def Get(): # ฟังก์ชัน Get ที่ไม่มีพารามิเตอร์
+    return "Beijing" # ส่งค่ากลับเป็นสตริง "Beijing"
+
+mydata = Get() # เก็บค่าที่ได้จากการเรียกใช้ฟังก์ชัน Get ลงในตัวแปร mydata
+print("mydata : ", mydata) # แสดงผลลัพธ์ที่ได้จากการเรียกใช้ฟังก์ชัน Get
+
+def getpi():
+    return 3.14
+
+rafdius = 5
+area = getpi()*rafdius**2
+print(f"พื้นที่วงกลม : {area} " )
+
+#Para + reture function
+def number(number):
+    if number%2 == 0:
+        return "Yes"
+    else:
+        return "No"
+
+def sum(*args):
+    total=0
+    for item in args:
+        total+=item
+    return total
+print(sum(10,20,30))
+
+#lambda funtion
+
+s=lambda num,n : num**n
+print(s(2,4))
