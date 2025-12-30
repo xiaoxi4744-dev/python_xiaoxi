@@ -10,6 +10,6 @@ sum.insert(0,"attakc") #แทรกระหว่าง Array
 
 sum.remove("attakc") #ลบตัวที่ต้องการ
 
-sum.clear() #ลบหมด
+#sum.clear() #ลบหมด
 
 print(sum)
